@@ -47,7 +47,7 @@ def decodeGMapPolylineEncoding(ascii_encoded_string):
 
         lng_num = lng * 1e-5
 
-        coord_pair.append(str(lng_num) + " " + str(lat_num))
+        coord_pair.append('%s %s' % (lng_num, lat_num))
 
     # The data I was converting was rather dirty..
     # At first I expected 100% polygons, but sometimes the encodings returned
